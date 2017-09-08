@@ -6,6 +6,9 @@
     </div>
 </template>
 <style scoped>
+    #app {
+        height: 100%;
+    }
 </style>
 <script>
 </script>

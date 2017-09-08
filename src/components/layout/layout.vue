@@ -7,6 +7,7 @@
 </template>
 <style scoped>
     .doc {
+        height: 100%;
     }
     .content {
         background: #eff2f7;

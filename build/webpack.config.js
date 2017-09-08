@@ -32,7 +32,8 @@ var webpackConfig = {
             'MODEL': path.resolve(__dirname, '../src/script/model'),
             'PROXY': path.resolve(__dirname, '../src/script/proxy'),
             'STORE': path.resolve(__dirname, '../src/store'),
-            'COMPONENTS': path.resolve(__dirname, '../src/components')
+            'COMPONENTS': path.resolve(__dirname, '../src/components'),
+            'ASSETS': path.resolve(__dirname, '../src/assets')
         }
     },
     resolveLoader: {
