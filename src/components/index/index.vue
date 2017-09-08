@@ -3,7 +3,7 @@
         div#box-map.box-map
         div.search-wrap
             div.back
-            input.search(type="text" @keydown="search")
+            input#suggest.search(type="text" @keydown="search" v-model="keyword")
             div.time-select
                 el-dropdown
                     span.el-dropwodn-link 30

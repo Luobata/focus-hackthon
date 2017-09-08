@@ -1,0 +1,1121 @@
+{
+    "data": {
+        "content": [
+            {
+                "id": "1_20003228",
+                "pid": 20003228,
+                "displayCityId": null,
+                "projName": "科煦园",
+                "projNameAliasSource": "中关村社区网",
+                "projPhotoPath": null,
+                "projPhotoType": null,
+                "relatedPhotos": null,
+                "provinceId": 1,
+                "originCityId": 1,
+                "cityIds": [
+                    1
+                ],
+                "grade": 3,
+                "developerIds": null,
+                "cityPrefixes": [
+                    "house"
+                ],
+                "citySuffixes": [
+                    "bj"
+                ],
+                "cityVDistricts": "{\"1\":[\"6\",\"3309\",\"3324\"]}",
+                "districtIds": [
+                    6,
+                    3309,
+                    3324
+                ],
+                "districtNames": [
+                    "海淀",
+                    "地图",
+                    "发生过测试v并不是的"
+                ],
+                "circleIds": [
+                    6650
+                ],
+                "circleDesc": null,
+                "projAddress": "海淀中关村南一街",
+                "constructTypes": [
+                    2
+                ],
+                "constructTypesDesc": [
+                    "塔楼"
+                ],
+                "propertyTypeIds": [
+                    0
+                ],
+                "propertyTypeDesc": [
+                    "普通住宅"
+                ],
+                "projDecorationIds": null,
+                "saleStatus": 2,
+                "status": 1,
+                "projFeatureIds": null,
+                "projFeatureDesc": null,
+                "loopLineId": 0,
+                "subwayIds": null,
+                "subwayLineStations": null,
+                "lonlat": null,
+                "lon": 116.325397,
+                "uid": null,
+                "lat": 39.982648,
+                "developerName": "",
+                "priceType": 1,
+                "priceTime": 1472659200000,
+                "lowPrice": 0,
+                "avgPrice": 101111,
+                "highPrice": 0,
+                "showPrice": 101111,
+                "showAllPrice": null,
+                "priceDesc": "101111元/㎡",
+                "marketingInfo": null,
+                "marketingSource": 0,
+                "openingYear": 0,
+                "openingMonth": 0,
+                "openingDay": 0,
+                "openingIsPredict": 0,
+                "openStartTime": 0,
+                "openEndTime": 0,
+                "openTimeDesc": "时间未确定",
+                "moveinStartTime": 0,
+                "moveinEndTime": 0,
+                "propertyYear": 0,
+                "phoneCalled": null,
+                "totalPVCount": null,
+                "totalClickCount": null,
+                "isLive": 0,
+                "liveTotal": 0,
+                "marketingTime": null,
+                "originCityCircles": "{\"1\":[\"6650\"]}",
+                "projectTypeInfos": {
+                    "content": [],
+                    "totalElements": 0,
+                    "totalPages": 0,
+                    "recommend": 0,
+                    "searchType": 0,
+                    "facetResult": {
+                        "name": "roomType",
+                        "type": "term",
+                        "terms": [],
+                        "total": 0,
+                        "other": 0,
+                        "missing": 0
+                    }
+                },
+                "projectTypeInfosTotal": 0,
+                "updateTime": 1496645466000
+            },
+            {
+                "id": "1_20003180",
+                "pid": 20003180,
+                "displayCityId": null,
+                "projName": "中关村南三街",
+                "projNameAliasSource": "中关村社区网",
+                "projPhotoPath": "/xf/zxc/7822470193f921b77f925a310f8a4c77.jpg",
+                "projPhotoType": 1,
+                "relatedPhotos": null,
+                "provinceId": 1,
+                "originCityId": 1,
+                "cityIds": [
+                    1
+                ],
+                "grade": 3,
+                "developerIds": null,
+                "cityPrefixes": [
+                    "house"
+                ],
+                "citySuffixes": [
+                    "bj"
+                ],
+                "cityVDistricts": "{\"1\":[\"6\",\"3309\",\"3324\"]}",
+                "districtIds": [
+                    6,
+                    3309,
+                    3324
+                ],
+                "districtNames": [
+                    "海淀",
+                    "地图",
+                    "发生过测试v并不是的"
+                ],
+                "circleIds": [
+                    6650
+                ],
+                "circleDesc": null,
+                "projAddress": "海淀北京市海淀区中关村南三街",
+                "constructTypes": [
+                    1
+                ],
+                "constructTypesDesc": [
+                    "板楼"
+                ],
+                "propertyTypeIds": [
+                    0
+                ],
+                "propertyTypeDesc": [
+                    "普通住宅"
+                ],
+                "projDecorationIds": null,
+                "saleStatus": 2,
+                "status": 1,
+                "projFeatureIds": null,
+                "projFeatureDesc": null,
+                "loopLineId": 0,
+                "subwayIds": null,
+                "subwayLineStations": null,
+                "lonlat": null,
+                "lon": 116.327456,
+                "uid": null,
+                "lat": 39.981778,
+                "developerName": "",
+                "priceType": 1,
+                "priceTime": 1480521600000,
+                "lowPrice": 0,
+                "avgPrice": 96508,
+                "highPrice": 0,
+                "showPrice": 96508,
+                "showAllPrice": null,
+                "priceDesc": "96508元/㎡",
+                "marketingInfo": null,
+                "marketingSource": 0,
+                "openingYear": 0,
+                "openingMonth": 0,
+                "openingDay": 0,
+                "openingIsPredict": 0,
+                "openStartTime": 0,
+                "openEndTime": 0,
+                "openTimeDesc": "时间未确定",
+                "moveinStartTime": 0,
+                "moveinEndTime": 0,
+                "propertyYear": 0,
+                "phoneCalled": null,
+                "totalPVCount": null,
+                "totalClickCount": null,
+                "isLive": 0,
+                "liveTotal": 0,
+                "marketingTime": null,
+                "originCityCircles": "{\"1\":[\"6650\"]}",
+                "projectTypeInfos": {
+                    "content": [],
+                    "totalElements": 0,
+                    "totalPages": 0,
+                    "recommend": 0,
+                    "searchType": 0,
+                    "facetResult": {
+                        "name": "roomType",
+                        "type": "term",
+                        "terms": [],
+                        "total": 0,
+                        "other": 0,
+                        "missing": 0
+                    }
+                },
+                "projectTypeInfosTotal": 0,
+                "updateTime": 1496645467000
+            },
+            {
+                "id": "1_20003232",
+                "pid": 20003232,
+                "displayCityId": null,
+                "projName": "中关村甲68号楼",
+                "projNameAliasSource": "中关村社区网",
+                "projPhotoPath": null,
+                "projPhotoType": null,
+                "relatedPhotos": null,
+                "provinceId": 1,
+                "originCityId": 1,
+                "cityIds": [
+                    1
+                ],
+                "grade": 3,
+                "developerIds": null,
+                "cityPrefixes": [
+                    "house"
+                ],
+                "citySuffixes": [
+                    "bj"
+                ],
+                "cityVDistricts": "{\"1\":[\"6\",\"3309\",\"3324\"]}",
+                "districtIds": [
+                    6,
+                    3309,
+                    3324
+                ],
+                "districtNames": [
+                    "海淀",
+                    "地图",
+                    "发生过测试v并不是的"
+                ],
+                "circleIds": [
+                    6650
+                ],
+                "circleDesc": null,
+                "projAddress": "海淀中关村甲68号楼(中关村一小旁)",
+                "constructTypes": [
+                    1
+                ],
+                "constructTypesDesc": [
+                    "板楼"
+                ],
+                "propertyTypeIds": [
+                    0
+                ],
+                "propertyTypeDesc": [
+                    "普通住宅"
+                ],
+                "projDecorationIds": null,
+                "saleStatus": 2,
+                "status": 1,
+                "projFeatureIds": null,
+                "projFeatureDesc": null,
+                "loopLineId": 0,
+                "subwayIds": null,
+                "subwayLineStations": null,
+                "lonlat": null,
+                "lon": 116.322749,
+                "uid": null,
+                "lat": 39.98216,
+                "developerName": "",
+                "priceType": 1,
+                "priceTime": 1480521600000,
+                "lowPrice": 0,
+                "avgPrice": 68817,
+                "highPrice": 0,
+                "showPrice": 68817,
+                "showAllPrice": null,
+                "priceDesc": "68817元/㎡",
+                "marketingInfo": null,
+                "marketingSource": 0,
+                "openingYear": 0,
+                "openingMonth": 0,
+                "openingDay": 0,
+                "openingIsPredict": 0,
+                "openStartTime": 0,
+                "openEndTime": 0,
+                "openTimeDesc": "时间未确定",
+                "moveinStartTime": 0,
+                "moveinEndTime": 0,
+                "propertyYear": 70,
+                "phoneCalled": null,
+                "totalPVCount": null,
+                "totalClickCount": null,
+                "isLive": 0,
+                "liveTotal": 0,
+                "marketingTime": null,
+                "originCityCircles": "{\"1\":[\"6650\"]}",
+                "projectTypeInfos": {
+                    "content": [],
+                    "totalElements": 0,
+                    "totalPages": 0,
+                    "recommend": 0,
+                    "searchType": 0,
+                    "facetResult": {
+                        "name": "roomType",
+                        "type": "term",
+                        "terms": [],
+                        "total": 0,
+                        "other": 0,
+                        "missing": 0
+                    }
+                },
+                "projectTypeInfosTotal": 0,
+                "updateTime": 1496645466000
+            },
+            {
+                "id": "1_1453",
+                "pid": 1453,
+                "displayCityId": null,
+                "projName": "新科祥园",
+                "projNameAliasSource": "",
+                "projPhotoPath": "/xf/zxc/6ad00cdad6e782d9ebf00bf6e3d5b4ce.jpg",
+                "projPhotoType": 0,
+                "relatedPhotos": [
+                    "/xf/zxc/b1bd4d464158a201d0b96c33f9b81c34.jpg",
+                    "/xf/zxc/7d4490a584b4069df2cb5af4b00bdaab.jpg"
+                ],
+                "provinceId": 1,
+                "originCityId": 1,
+                "cityIds": [
+                    1
+                ],
+                "grade": 3,
+                "developerIds": [
+                    2953
+                ],
+                "cityPrefixes": [
+                    "house"
+                ],
+                "citySuffixes": [
+                    "bj"
+                ],
+                "cityVDistricts": "{\"1\":[\"6\",\"3309\",\"3324\"]}",
+                "districtIds": [
+                    6,
+                    3309,
+                    3324
+                ],
+                "districtNames": [
+                    "海淀",
+                    "地图",
+                    "发生过测试v并不是的"
+                ],
+                "circleIds": [
+                    6650
+                ],
+                "circleDesc": null,
+                "projAddress": "科学院南路与中关村南路交叉口(搜狐媒体大厦对面）",
+                "constructTypes": [
+                    2,
+                    8
+                ],
+                "constructTypesDesc": [
+                    "塔楼",
+                    "高层"
+                ],
+                "propertyTypeIds": [
+                    0
+                ],
+                "propertyTypeDesc": [
+                    "普通住宅"
+                ],
+                "projDecorationIds": [
+                    1
+                ],
+                "saleStatus": 2,
+                "status": 1,
+                "projFeatureIds": null,
+                "projFeatureDesc": null,
+                "loopLineId": 0,
+                "subwayIds": null,
+                "subwayLineStations": null,
+                "lonlat": null,
+                "lon": 116.3225048,
+                "uid": null,
+                "lat": 39.98187894,
+                "developerName": "中科院红楼项目办",
+                "priceType": 1,
+                "priceTime": 1475251200000,
+                "lowPrice": 0,
+                "avgPrice": 67998,
+                "highPrice": 0,
+                "showPrice": 67998,
+                "showAllPrice": null,
+                "priceDesc": "67998元/㎡",
+                "marketingInfo": null,
+                "marketingSource": 0,
+                "openingYear": 2003,
+                "openingMonth": 3,
+                "openingDay": 0,
+                "openingIsPredict": 0,
+                "openStartTime": 20030300,
+                "openEndTime": 20030300,
+                "openTimeDesc": "2003年3月",
+                "moveinStartTime": 0,
+                "moveinEndTime": 0,
+                "propertyYear": 70,
+                "phoneCalled": null,
+                "totalPVCount": null,
+                "totalClickCount": null,
+                "isLive": 0,
+                "liveTotal": 0,
+                "marketingTime": null,
+                "originCityCircles": "{\"1\":[\"6650\"]}",
+                "projectTypeInfos": {
+                    "content": [],
+                    "totalElements": 0,
+                    "totalPages": 0,
+                    "recommend": 0,
+                    "searchType": 0,
+                    "facetResult": {
+                        "name": "roomType",
+                        "type": "term",
+                        "terms": [],
+                        "total": 0,
+                        "other": 0,
+                        "missing": 0
+                    }
+                },
+                "projectTypeInfosTotal": 0,
+                "updateTime": 1496645658000
+            },
+            {
+                "id": "1_20019571",
+                "pid": 20019571,
+                "displayCityId": null,
+                "projName": "保福寺小区",
+                "projNameAliasSource": "",
+                "projPhotoPath": "/xf/zxc/b39cf21df3182bcfcb5b1483391c60a1.jpg",
+                "projPhotoType": 1,
+                "relatedPhotos": [
+                    "/xf/zxc/828cbfaa2f0f34fe5a61701878921eed.jpg",
+                    "/xf/zxc/7f243167dccb5ddebccdab24359501f9.jpg"
+                ],
+                "provinceId": 1,
+                "originCityId": 1,
+                "cityIds": [
+                    1
+                ],
+                "grade": 3,
+                "developerIds": null,
+                "cityPrefixes": [
+                    "house"
+                ],
+                "citySuffixes": [
+                    "bj"
+                ],
+                "cityVDistricts": "{\"1\":[\"6\",\"3309\",\"3324\"]}",
+                "districtIds": [
+                    6,
+                    3309,
+                    3324
+                ],
+                "districtNames": [
+                    "海淀",
+                    "地图",
+                    "发生过测试v并不是的"
+                ],
+                "circleIds": [
+                    6650,
+                    8624
+                ],
+                "circleDesc": null,
+                "projAddress": "中关村保福寺",
+                "constructTypes": [
+                    1,
+                    5,
+                    8
+                ],
+                "constructTypesDesc": [
+                    "板楼",
+                    "多层",
+                    "高层"
+                ],
+                "propertyTypeIds": [
+                    0
+                ],
+                "propertyTypeDesc": [
+                    "普通住宅"
+                ],
+                "projDecorationIds": null,
+                "saleStatus": 2,
+                "status": 1,
+                "projFeatureIds": null,
+                "projFeatureDesc": null,
+                "loopLineId": 0,
+                "subwayIds": null,
+                "subwayLineStations": null,
+                "lonlat": null,
+                "lon": 116.328453,
+                "uid": null,
+                "lat": 39.981775,
+                "developerName": "",
+                "priceType": 1,
+                "priceTime": 1466006400000,
+                "lowPrice": 0,
+                "avgPrice": 92586,
+                "highPrice": 0,
+                "showPrice": 92586,
+                "showAllPrice": null,
+                "priceDesc": "92586元/㎡",
+                "marketingInfo": null,
+                "marketingSource": 0,
+                "openingYear": 0,
+                "openingMonth": 0,
+                "openingDay": 0,
+                "openingIsPredict": 0,
+                "openStartTime": 0,
+                "openEndTime": 0,
+                "openTimeDesc": "时间未确定",
+                "moveinStartTime": 0,
+                "moveinEndTime": 0,
+                "propertyYear": 70,
+                "phoneCalled": null,
+                "totalPVCount": null,
+                "totalClickCount": null,
+                "isLive": 0,
+                "liveTotal": 0,
+                "marketingTime": null,
+                "originCityCircles": "{\"1\":[\"6650\",\"8624\"]}",
+                "projectTypeInfos": {
+                    "content": [],
+                    "totalElements": 0,
+                    "totalPages": 0,
+                    "recommend": 0,
+                    "searchType": 0,
+                    "facetResult": {
+                        "name": "roomType",
+                        "type": "term",
+                        "terms": [],
+                        "total": 0,
+                        "other": 0,
+                        "missing": 0
+                    }
+                },
+                "projectTypeInfosTotal": 0,
+                "updateTime": 1496645324000
+            },
+            {
+                "id": "1_20003280",
+                "pid": 20003280,
+                "displayCityId": null,
+                "projName": "中关村发育所",
+                "projNameAliasSource": "中关村社区网",
+                "projPhotoPath": "/xf/zxc/51a6e7ef8dd847b40e4ee5f574016802.jpg",
+                "projPhotoType": 1,
+                "relatedPhotos": null,
+                "provinceId": 1,
+                "originCityId": 1,
+                "cityIds": [
+                    1
+                ],
+                "grade": 3,
+                "developerIds": null,
+                "cityPrefixes": [
+                    "house"
+                ],
+                "citySuffixes": [
+                    "bj"
+                ],
+                "cityVDistricts": "{\"1\":[\"6\",\"3309\",\"3324\"]}",
+                "districtIds": [
+                    6,
+                    3309,
+                    3324
+                ],
+                "districtNames": [
+                    "海淀",
+                    "地图",
+                    "发生过测试v并不是的"
+                ],
+                "circleIds": [
+                    6650
+                ],
+                "circleDesc": null,
+                "projAddress": "海淀北京市海淀区中关村南二条",
+                "constructTypes": [
+                    1
+                ],
+                "constructTypesDesc": [
+                    "板楼"
+                ],
+                "propertyTypeIds": [
+                    0
+                ],
+                "propertyTypeDesc": [
+                    "普通住宅"
+                ],
+                "projDecorationIds": null,
+                "saleStatus": 2,
+                "status": 1,
+                "projFeatureIds": null,
+                "projFeatureDesc": null,
+                "loopLineId": 0,
+                "subwayIds": null,
+                "subwayLineStations": null,
+                "lonlat": null,
+                "lon": 116.329074,
+                "uid": null,
+                "lat": 39.982173,
+                "developerName": "",
+                "priceType": 1,
+                "priceTime": 1472659200000,
+                "lowPrice": 0,
+                "avgPrice": 90071,
+                "highPrice": 0,
+                "showPrice": 90071,
+                "showAllPrice": null,
+                "priceDesc": "90071元/㎡",
+                "marketingInfo": null,
+                "marketingSource": 0,
+                "openingYear": 0,
+                "openingMonth": 0,
+                "openingDay": 0,
+                "openingIsPredict": 0,
+                "openStartTime": 0,
+                "openEndTime": 0,
+                "openTimeDesc": "时间未确定",
+                "moveinStartTime": 0,
+                "moveinEndTime": 0,
+                "propertyYear": 0,
+                "phoneCalled": null,
+                "totalPVCount": null,
+                "totalClickCount": null,
+                "isLive": 0,
+                "liveTotal": 0,
+                "marketingTime": null,
+                "originCityCircles": "{\"1\":[\"6650\"]}",
+                "projectTypeInfos": {
+                    "content": [],
+                    "totalElements": 0,
+                    "totalPages": 0,
+                    "recommend": 0,
+                    "searchType": 0,
+                    "facetResult": {
+                        "name": "roomType",
+                        "type": "term",
+                        "terms": [],
+                        "total": 0,
+                        "other": 0,
+                        "missing": 0
+                    }
+                },
+                "projectTypeInfosTotal": 0,
+                "updateTime": 1496645464000
+            },
+            {
+                "id": "1_20002519",
+                "pid": 20002519,
+                "displayCityId": null,
+                "projName": "科育社区",
+                "projNameAliasSource": "",
+                "projPhotoPath": null,
+                "projPhotoType": null,
+                "relatedPhotos": null,
+                "provinceId": 1,
+                "originCityId": 1,
+                "cityIds": [
+                    1
+                ],
+                "grade": 3,
+                "developerIds": [
+                    2953
+                ],
+                "cityPrefixes": [
+                    "house"
+                ],
+                "citySuffixes": [
+                    "bj"
+                ],
+                "cityVDistricts": "{\"1\":[\"6\",\"3309\",\"3324\"]}",
+                "districtIds": [
+                    6,
+                    3309,
+                    3324
+                ],
+                "districtNames": [
+                    "海淀",
+                    "地图",
+                    "发生过测试v并不是的"
+                ],
+                "circleIds": [
+                    6650
+                ],
+                "circleDesc": null,
+                "projAddress": "中关村南一街道科育社区",
+                "constructTypes": [
+                    1,
+                    5
+                ],
+                "constructTypesDesc": [
+                    "板楼",
+                    "多层"
+                ],
+                "propertyTypeIds": [
+                    0
+                ],
+                "propertyTypeDesc": [
+                    "普通住宅"
+                ],
+                "projDecorationIds": null,
+                "saleStatus": 2,
+                "status": 1,
+                "projFeatureIds": null,
+                "projFeatureDesc": null,
+                "loopLineId": 0,
+                "subwayIds": null,
+                "subwayLineStations": null,
+                "lonlat": null,
+                "lon": 116.321603,
+                "uid": null,
+                "lat": 39.981903,
+                "developerName": "中科院红楼项目办",
+                "priceType": 1,
+                "priceTime": 1480521600000,
+                "lowPrice": 0,
+                "avgPrice": 117089,
+                "highPrice": 0,
+                "showPrice": 117089,
+                "showAllPrice": null,
+                "priceDesc": "117089元/㎡",
+                "marketingInfo": null,
+                "marketingSource": 0,
+                "openingYear": 0,
+                "openingMonth": 0,
+                "openingDay": 0,
+                "openingIsPredict": 0,
+                "openStartTime": 0,
+                "openEndTime": 0,
+                "openTimeDesc": "时间未确定",
+                "moveinStartTime": 0,
+                "moveinEndTime": 0,
+                "propertyYear": 70,
+                "phoneCalled": null,
+                "totalPVCount": null,
+                "totalClickCount": null,
+                "isLive": 0,
+                "liveTotal": 0,
+                "marketingTime": null,
+                "originCityCircles": "{\"1\":[\"6650\"]}",
+                "projectTypeInfos": {
+                    "content": [],
+                    "totalElements": 0,
+                    "totalPages": 0,
+                    "recommend": 0,
+                    "searchType": 0,
+                    "facetResult": {
+                        "name": "roomType",
+                        "type": "term",
+                        "terms": [],
+                        "total": 0,
+                        "other": 0,
+                        "missing": 0
+                    }
+                },
+                "projectTypeInfosTotal": 0,
+                "updateTime": 1496645490000
+            },
+            {
+                "id": "1_20003347",
+                "pid": 20003347,
+                "displayCityId": null,
+                "projName": "中科院科学园",
+                "projNameAliasSource": "北沙滩社区网",
+                "projPhotoPath": null,
+                "projPhotoType": null,
+                "relatedPhotos": null,
+                "provinceId": 1,
+                "originCityId": 1,
+                "cityIds": [
+                    1
+                ],
+                "grade": 3,
+                "developerIds": null,
+                "cityPrefixes": [
+                    "house"
+                ],
+                "citySuffixes": [
+                    "bj"
+                ],
+                "cityVDistricts": "{\"1\":[\"6\",\"3309\",\"3324\"]}",
+                "districtIds": [
+                    6,
+                    3309,
+                    3324
+                ],
+                "districtNames": [
+                    "海淀",
+                    "地图",
+                    "发生过测试v并不是的"
+                ],
+                "circleIds": [
+                    6650
+                ],
+                "circleDesc": null,
+                "projAddress": "朝阳科学园南里东街10号",
+                "constructTypes": [
+                    1
+                ],
+                "constructTypesDesc": [
+                    "板楼"
+                ],
+                "propertyTypeIds": [
+                    0
+                ],
+                "propertyTypeDesc": [
+                    "普通住宅"
+                ],
+                "projDecorationIds": null,
+                "saleStatus": 2,
+                "status": 1,
+                "projFeatureIds": null,
+                "projFeatureDesc": null,
+                "loopLineId": 0,
+                "subwayIds": null,
+                "subwayLineStations": null,
+                "lonlat": null,
+                "lon": 116.32067,
+                "uid": null,
+                "lat": 39.983635,
+                "developerName": "",
+                "priceType": 1,
+                "priceTime": 1472659200000,
+                "lowPrice": 0,
+                "avgPrice": 74285,
+                "highPrice": 0,
+                "showPrice": 74285,
+                "showAllPrice": null,
+                "priceDesc": "74285元/㎡",
+                "marketingInfo": null,
+                "marketingSource": 0,
+                "openingYear": 0,
+                "openingMonth": 0,
+                "openingDay": 0,
+                "openingIsPredict": 0,
+                "openStartTime": 0,
+                "openEndTime": 0,
+                "openTimeDesc": "时间未确定",
+                "moveinStartTime": 0,
+                "moveinEndTime": 0,
+                "propertyYear": 0,
+                "phoneCalled": null,
+                "totalPVCount": null,
+                "totalClickCount": null,
+                "isLive": 0,
+                "liveTotal": 0,
+                "marketingTime": null,
+                "originCityCircles": "{\"1\":[\"6650\"]}",
+                "projectTypeInfos": {
+                    "content": [],
+                    "totalElements": 0,
+                    "totalPages": 0,
+                    "recommend": 0,
+                    "searchType": 0,
+                    "facetResult": {
+                        "name": "roomType",
+                        "type": "term",
+                        "terms": [],
+                        "total": 0,
+                        "other": 0,
+                        "missing": 0
+                    }
+                },
+                "projectTypeInfosTotal": 0,
+                "updateTime": 1496645462000
+            },
+            {
+                "id": "1_20003226",
+                "pid": 20003226,
+                "displayCityId": null,
+                "projName": "中关村南一街",
+                "projNameAliasSource": "中关村社区网",
+                "projPhotoPath": null,
+                "projPhotoType": null,
+                "relatedPhotos": null,
+                "provinceId": 1,
+                "originCityId": 1,
+                "cityIds": [
+                    1
+                ],
+                "grade": 3,
+                "developerIds": null,
+                "cityPrefixes": [
+                    "house"
+                ],
+                "citySuffixes": [
+                    "bj"
+                ],
+                "cityVDistricts": "{\"1\":[\"6\",\"3309\",\"3324\"]}",
+                "districtIds": [
+                    6,
+                    3309,
+                    3324
+                ],
+                "districtNames": [
+                    "海淀",
+                    "地图",
+                    "发生过测试v并不是的"
+                ],
+                "circleIds": [
+                    6650
+                ],
+                "circleDesc": null,
+                "projAddress": "海淀北京市海淀区中关村南一街",
+                "constructTypes": [
+                    1
+                ],
+                "constructTypesDesc": [
+                    "板楼"
+                ],
+                "propertyTypeIds": [
+                    0
+                ],
+                "propertyTypeDesc": [
+                    "普通住宅"
+                ],
+                "projDecorationIds": null,
+                "saleStatus": 2,
+                "status": 1,
+                "projFeatureIds": null,
+                "projFeatureDesc": null,
+                "loopLineId": 0,
+                "subwayIds": null,
+                "subwayLineStations": null,
+                "lonlat": null,
+                "lon": 116.32021,
+                "uid": null,
+                "lat": 39.983294,
+                "developerName": "",
+                "priceType": 1,
+                "priceTime": 1480521600000,
+                "lowPrice": 0,
+                "avgPrice": 79590,
+                "highPrice": 0,
+                "showPrice": 79590,
+                "showAllPrice": null,
+                "priceDesc": "79590元/㎡",
+                "marketingInfo": null,
+                "marketingSource": 0,
+                "openingYear": 0,
+                "openingMonth": 0,
+                "openingDay": 0,
+                "openingIsPredict": 0,
+                "openStartTime": 0,
+                "openEndTime": 0,
+                "openTimeDesc": "时间未确定",
+                "moveinStartTime": 0,
+                "moveinEndTime": 0,
+                "propertyYear": 70,
+                "phoneCalled": null,
+                "totalPVCount": null,
+                "totalClickCount": null,
+                "isLive": 0,
+                "liveTotal": 0,
+                "marketingTime": null,
+                "originCityCircles": "{\"1\":[\"6650\"]}",
+                "projectTypeInfos": {
+                    "content": [],
+                    "totalElements": 0,
+                    "totalPages": 0,
+                    "recommend": 0,
+                    "searchType": 0,
+                    "facetResult": {
+                        "name": "roomType",
+                        "type": "term",
+                        "terms": [],
+                        "total": 0,
+                        "other": 0,
+                        "missing": 0
+                    }
+                },
+                "projectTypeInfosTotal": 0,
+                "updateTime": 1496645466000
+            },
+            {
+                "id": "1_1551",
+                "pid": 1551,
+                "displayCityId": null,
+                "projName": "中关村科贸中心",
+                "projNameAliasSource": "",
+                "projPhotoPath": "/xf/zxc/de1be265250cc55ed81a7f8b97b87d5a.jpg",
+                "projPhotoType": 0,
+                "relatedPhotos": [
+                    "/xf/zxc/67d7b5eb505065e7544fed41f9567724.jpg"
+                ],
+                "provinceId": 1,
+                "originCityId": 1,
+                "cityIds": [
+                    1
+                ],
+                "grade": 3,
+                "developerIds": [
+                    550
+                ],
+                "cityPrefixes": [
+                    "house"
+                ],
+                "citySuffixes": [
+                    "bj"
+                ],
+                "cityVDistricts": "{\"1\":[\"6\",\"3309\",\"3324\"]}",
+                "districtIds": [
+                    6,
+                    3309,
+                    3324
+                ],
+                "districtNames": [
+                    "海淀",
+                    "地图",
+                    "发生过测试v并不是的"
+                ],
+                "circleIds": [
+                    6650
+                ],
+                "circleDesc": null,
+                "projAddress": "中关村大街与北四环路口东南角",
+                "constructTypes": [
+                    2,
+                    8
+                ],
+                "constructTypesDesc": [
+                    "塔楼",
+                    "高层"
+                ],
+                "propertyTypeIds": [
+                    18
+                ],
+                "propertyTypeDesc": [
+                    "写字楼"
+                ],
+                "projDecorationIds": [
+                    3
+                ],
+                "saleStatus": 2,
+                "status": 1,
+                "projFeatureIds": null,
+                "projFeatureDesc": null,
+                "loopLineId": 0,
+                "subwayIds": null,
+                "subwayLineStations": null,
+                "lonlat": null,
+                "lon": 116.319802,
+                "uid": null,
+                "lat": 39.98294,
+                "developerName": "北京中关村开发建设股份有限公司",
+                "priceType": 1,
+                "priceTime": 1478102400000,
+                "lowPrice": 0,
+                "avgPrice": 29811,
+                "highPrice": 0,
+                "showPrice": 29811,
+                "showAllPrice": null,
+                "priceDesc": "29811元/㎡",
+                "marketingInfo": null,
+                "marketingSource": 0,
+                "openingYear": 0,
+                "openingMonth": 0,
+                "openingDay": 0,
+                "openingIsPredict": 0,
+                "openStartTime": 0,
+                "openEndTime": 0,
+                "openTimeDesc": "时间未确定",
+                "moveinStartTime": 20031228,
+                "moveinEndTime": 20031228,
+                "propertyYear": 0,
+                "phoneCalled": null,
+                "totalPVCount": null,
+                "totalClickCount": null,
+                "isLive": 0,
+                "liveTotal": 0,
+                "marketingTime": null,
+                "originCityCircles": "{\"1\":[\"6650\"]}",
+                "projectTypeInfos": {
+                    "content": [],
+                    "totalElements": 0,
+                    "totalPages": 0,
+                    "recommend": 0,
+                    "searchType": 0,
+                    "facetResult": {
+                        "name": "roomType",
+                        "type": "term",
+                        "terms": [],
+                        "total": 0,
+                        "other": 0,
+                        "missing": 0
+                    }
+                },
+                "projectTypeInfosTotal": 0,
+                "updateTime": 1496645657000
+            }
+        ],
+        "totalElements": 7991,
+        "totalPages": 800,
+        "recommend": 0,
+        "searchType": 0,
+        "facetResult": null
+    },
+    "errorCode": 0
+}
