@@ -54,7 +54,12 @@ export default {
                                     position: [arr[9].lon, arr[9].lat], //基点位置
                                     animation: 'AMAP_ANIMATION_DROP',
                                     offset: new AMap.Pixel(-17, -42), //相对于基点的偏移位置
+                                    extData: '1',
                                     content: '<div class="assign-pointer"><p class="assign-pointer-text">华清嘉园</p><p class="assign-pointer-text">5套</p></div>'
+                                });
+                                AMap.event.addListener(marker, 'touchstart', function () {
+                                    console.log(this.getExtData());
+                                    console.log(this);
                                 });
                             }, 1000);
                         }, 100);
