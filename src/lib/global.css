@@ -14,3 +14,23 @@ html, body {
     50% { -webkit-transform: rotate(180deg);}
     100% { -webkit-transform: rotate(360deg);}  
 } 
+
+.assign-pointer {
+    width: 60px;
+    height: 60px;
+    line-height: 20px;
+    border-radius: 60px;
+    background: #ff6c00;
+    border: 1px solid #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.assign-pointer .assign-pointer-text {
+    display: inline-block;
+    color: #fff;
+    font-size: 12px;
+    height: 12px;
+    margin: 2px 0;
+}

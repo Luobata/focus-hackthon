@@ -1,3 +1,4 @@
+import data from 'ASSETS/demo.json';
 let map;
 let marker;
 let geocoder;
@@ -15,7 +16,6 @@ export default {
     methods: {
         search (e) {
             if (e.keyCode === 13) {
-                console.log(this.keyword);
                 geocoder.getLocation(this.keyword, (status, result) => {
                     if (status === 'complete' && result.info === 'OK') {
                         const location = result.geocodes[0].location;
@@ -42,12 +42,21 @@ export default {
                         image.setMap(map);
                         setTimeout(() => {
                             let dom = document.querySelectorAll('.amap-container img');
-                            console.log(dom);
+                            let arr = data.data.content;
                             dom.forEach((item) => {
                                 if (item.src.indexOf(url) !== -1) {
                                     item.className += 'rotate';
                                 }
                             });
+                            setTimeout(() => {
+                                var marker = new AMap.Marker({ //添加自定义点标记
+                                    map: map,
+                                    position: [arr[9].lon, arr[9].lat], //基点位置
+                                    animation: 'AMAP_ANIMATION_DROP',
+                                    offset: new AMap.Pixel(-17, -42), //相对于基点的偏移位置
+                                    content: '<div class="assign-pointer"><p class="assign-pointer-text">华清嘉园</p><p class="assign-pointer-text">5套</p></div>'
+                                });
+                            }, 1000);
                         }, 100);
                     }
                 });
