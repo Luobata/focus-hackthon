@@ -1,17 +1,8 @@
 <template>
     <div class="doc">
-        <index-header></index-header>
-        <div class="content" :style="{ height: mheight + 'px' }">
-            <div class="left-slider">
-                <left-slider></left-slider>
-            </div>
-            <div class="main-content" :style="{ height: mheight - 20 + 'px', width: mwidth + 'px' }" id="mainContent">
-                <keep-alive>
-                    <router-view></router-view>
-                </keep-alive>
-            </div>
-        </div>
-        <el-button v-loading.fullscreen.lock="fullscreenLoading" style="display: none;"></el-button>
+        <keep-alive>
+            <router-view></router-view>
+        </keep-alive>
     </div>
 </template>
 <style scoped>
