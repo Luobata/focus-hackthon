@@ -4,7 +4,7 @@ export const addInfoWindow = (map, marker) => {
     let content = [];
     content.push(
         '<div class="content-img-wrap">' +
-        '   <img class="content-img" src="http://tpc.googlesyndication.com/simgad/5843493769827749134">' +
+        '   <a href="./#/detail/1"><img class="content-img" src="http://tpc.googlesyndication.com/simgad/5843493769827749134"></a>' +
         '</div>'
     );
     content.push(

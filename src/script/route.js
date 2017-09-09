@@ -6,6 +6,10 @@ var routers = [
             {
                 path: 'index',
                 component: require('COMPONENTS/index/index.vue'),
+            },
+            {
+                path: 'detail/:detailId',
+                component: require('COMPONENTS/detail/detail.vue'),
             }
         ]
     },
