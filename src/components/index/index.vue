@@ -193,6 +193,43 @@
         left: 0;
         transform: rotateY(-180deg);
     }
+    .index-wrap .info-back .wrap-back {
+        padding: 20px;
+        box-sizing: border-box;
+    }
+    .index-wrap .info-back .wrap-back .wrap-text {
+        font-family: PingFangSC-Light;
+        font-size: 14px;
+        color: #4A4A4A;
+        margin-top: 15px;
+        line-height: 25px;
+        max-height: 100px;
+        overflow-y: auto;
+    }
+    .index-wrap .info-back .logo {
+        width: 38px;
+        height: 38px;
+        display: inline-block;
+    }
+    .index-wrap .info-back.subway .logo {
+        background: url('../../assets/subway.png') no-repeat center center;
+        background-size: 100%;
+    }
+    .index-wrap .info-back.bus .logo {
+        background: url('../../assets/bus.png') no-repeat center center;
+        background-size: 100%;
+    }
+    .index-wrap .info-back.bike .logo {
+        background: url('../../assets/bike.png') no-repeat center center;
+        background-size: 100%;
+    }
+    .index-wrap .info-back.walk .logo {
+        background: url('../../assets/walk.png') no-repeat center center;
+        background-size: 100%;
+    }
+    .index-wrap .info.rotate-card {
+        transform: rotateY(180deg);
+    }
 </style>
 <script src="./index.js">
 </script>

@@ -36,6 +36,8 @@ export const addInfoWindow = (map, marker, data) => {
 
     back = 
         '<div class="wrap-back">' +
+        '   <div class="logo"></div>' +
+        '   <div class="wrap-text"></div>' +
         '</div>';
     var infoWindow = new AMap.InfoWindow({
         isCustom: true,  //使用自定义窗体
@@ -50,8 +52,53 @@ export const addInfoWindow = (map, marker, data) => {
     //构建自定义信息窗体
     function createInfoWindow(title, content, backs) {
         var info = document.createElement("div");
+        var back;
+        var middle;
         info.className = "info";
 
+        info.onclick = (e) => {
+            let src = $(e.target);
+            let txt = $(info).find('.wrap-text');
+
+            if (!src.parents('.info-middle').length) {
+                $(info).removeClass('rotate-card');
+                return;
+            }
+
+            if (!src.hasClass('time')) {
+                src = src.parents('.time');
+            }
+
+
+            back.className = 'info-back';
+
+            if (src.hasClass('subway')) {
+                if (data.subway === '--') return;
+                $(back).addClass('subway');
+                txt.html(data.subwaySteps.join('</br>'));
+            }
+
+            if (src.hasClass('bus')) {
+                if (data.bus === '--') return;
+                $(back).addClass('bus');
+                txt.html(data.busSteps.join('</br>'));
+            }
+
+            if (src.hasClass('bike')) {
+                if (data.bicycling === '--') return;
+                $(back).addClass('bike');
+                txt.html(data.bicyclingSteps.join('</br>'));
+            }
+
+            if (src.hasClass('walk')) {
+                if (data.walking === '--') return;
+                $(back).addClass('walk');
+                txt.html(data.walkingSteps.join('</br>'));
+            }
+
+
+            $(info).addClass('rotate-card');
+        };
         //可以通过下面的方式修改自定义窗体的宽高
         //info.style.width = "400px";
         // 定义顶部标题
@@ -73,7 +120,7 @@ export const addInfoWindow = (map, marker, data) => {
         info.appendChild(mask);
 
         // 定义中部内容
-        var middle = document.createElement("div");
+        middle = document.createElement("div");
         middle.className = "info-middle";
         middle.style.backgroundColor = 'white';
         middle.innerHTML = content;
@@ -81,7 +128,7 @@ export const addInfoWindow = (map, marker, data) => {
         info.appendChild(middle);
 
         // 定义底部内容
-        var back = document.createElement("div");
+        back = document.createElement("div");
         back.className = "info-back";
         back.innerHTML = backs;
         info.appendChild(back);
