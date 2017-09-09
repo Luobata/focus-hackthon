@@ -81,3 +81,21 @@ export const addInfoWindow = (map, marker) => {
         map.clearInfoWindow();
     }
 };
+
+export const addMarker = (map, location) => {
+    const marker = new AMap.Marker({ //添加自定义点标记
+        map: map,
+        position: [location.lon, location.lat], //基点位置
+        animation: 'AMAP_ANIMATION_DROP',
+        offset: new AMap.Pixel(-17, -42), //相对于基点的偏移位置
+        extData: '1',
+        content: '<div class="assign-pointer"><p class="assign-pointer-text">华清嘉园</p><p class="assign-pointer-text">5套</p></div>'
+    });
+
+    AMap.event.addListener(marker, 'touchstart', function () {
+        console.log(this.getExtData());
+        console.log(this);
+    });
+
+    return marker;
+};

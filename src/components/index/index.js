@@ -1,5 +1,5 @@
 import data from 'ASSETS/demo.json';
-import { addInfoWindow } from './map';
+import { addInfoWindow, addMarker } from './map';
 let map;
 let marker;
 let geocoder;
@@ -20,7 +20,7 @@ export default {
                 geocoder.getLocation(this.keyword, (status, result) => {
                     if (status === 'complete' && result.info === 'OK') {
                         const location = result.geocodes[0].location;
-                        map.setZoomAndCenter(12, [location.lng, location.lat]);
+                        map.setZoomAndCenter(13, [location.lng, location.lat]);
                         marker.setPosition(
                             new AMap.LngLat(
                                 location.lng,
@@ -50,18 +50,9 @@ export default {
                                 }
                             });
                             setTimeout(() => {
-                                var marker = new AMap.Marker({ //添加自定义点标记
-                                    map: map,
-                                    position: [arr[9].lon, arr[9].lat], //基点位置
-                                    animation: 'AMAP_ANIMATION_DROP',
-                                    offset: new AMap.Pixel(-17, -42), //相对于基点的偏移位置
-                                    extData: '1',
-                                    content: '<div class="assign-pointer"><p class="assign-pointer-text">华清嘉园</p><p class="assign-pointer-text">5套</p></div>'
-                                });
-                                AMap.event.addListener(marker, 'touchstart', function () {
-                                    console.log(this.getExtData());
-                                    console.log(this);
-                                });
+                                let marker = addMarker(map, arr[9]);
+                                addInfoWindow(map, marker);
+                                marker = addMarker(map, arr[0]);
                                 addInfoWindow(map, marker);
                             }, 1000);
                         }, 100);
