@@ -11,8 +11,10 @@ html, body {
 
 @-webkit-keyframes rotate {   
     0% { -webkit-transform: rotate(0deg);}  
-    50% { -webkit-transform: rotate(180deg);}
-    100% { -webkit-transform: rotate(360deg);}  
+    25% { -webkit-transform: rotate(-90deg);}  
+    50% { -webkit-transform: rotate(-180deg);}
+    75% { -webkit-transform: rotate(-290deg);}
+    100% { -webkit-transform: rotate(-360deg);}  
 } 
 
 .assign-pointer {

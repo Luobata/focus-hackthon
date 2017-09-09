@@ -79,6 +79,101 @@
         font-size: 14px;
         color: #4A4A4A;
     }
+    .index-wrap .info-middle {
+        width: 269.5px;
+        background: #fff;
+        font-size: 0;
+    }
+    .index-wrap .content-img {
+        width: 100%;
+        height: 120px;
+    }
+    .index-wrap .content-text {
+        width: 100%;
+        height: 80px;
+        padding: 11.5px 6.5px 11.5px;
+        box-sizing: border-box;
+    }
+    .index-wrap .content-text .line-one,
+    .index-wrap .content-text .line-two {
+        width: 100%;
+        overflow: hidden;
+    }
+    .index-wrap .content-text .line-one .house-name {
+        font-family: PingFangSC-Regular;
+        font-size: 16px;
+        color: #000000;
+        float: left;
+    }
+    .index-wrap .content-text .line-one .house-prize {
+        font-family: PingFangSC-Regular;
+        font-size: 14px;
+        color: #FF6A00;
+        float: right;
+    }
+    .index-wrap .content-text .line-two {
+        margin-top: 10px;
+    }
+    .index-wrap .content-text .line-two .time {
+        display: inline-block;
+        width: 25%;
+        font-family: PingFangSC-Regular;
+        font-size: 12px;
+    }
+    .index-wrap .content-text .line-two .time.subway {
+        color: #00B0F5;
+    }
+    .index-wrap .content-text .line-two .time.bus {
+        color: #FDAB53;
+    }
+    .index-wrap .content-text .line-two .time.bike {
+        color: #00BA88;
+    }
+    .index-wrap .content-text .line-two .time.walk {
+        color: #C9449B;
+    }
+    .index-wrap .content-text .line-two .time .icon {
+        width: 19px;
+        height: 19px;
+        display: inline-block;
+        vertical-align: -5px;
+        margin-right: 2.5px;
+    }
+    .index-wrap .content-text .line-two .time.subway .icon {
+        background: url('../../assets/subway.png') no-repeat center center;
+        background-size: 100%;
+    }
+    .index-wrap .content-text .line-two .time.bus .icon {
+        background: url('../../assets/bus.png') no-repeat center center;
+        background-size: 100%;
+    }
+    .index-wrap .content-text .line-two .time.bike .icon {
+        background: url('../../assets/bike.png') no-repeat center center;
+        background-size: 100%;
+    }
+    .index-wrap .content-text .line-two .time.walk .icon {
+        background: url('../../assets/walk.png') no-repeat center center;
+        background-size: 100%;
+    }
+    .index-wrap .info {
+        position: relative;
+    }
+    .index-wrap .info:after {
+        content: "";
+        position: absolute;
+        top: 200px;
+        left: 124px;
+        width: 0;
+        height: 0;
+        border: 8px solid transparent;
+        border-top-color: #fff;
+    }
+    .index-wrap .info .closeX {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+    }
+
 </style>
 <script src="./index.js">
 </script>

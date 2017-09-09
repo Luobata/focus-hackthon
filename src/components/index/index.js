@@ -1,4 +1,5 @@
 import data from 'ASSETS/demo.json';
+import { addInfoWindow } from './map';
 let map;
 let marker;
 let geocoder;
@@ -36,7 +37,7 @@ export default {
                             fillOpacity: 0.15//填充透明度
                         });
                         circle.setMap(map);
-                        const url = '//localhost:9000/assets/circle.png';
+                        const url = '//localhost:6600/assets/circle.png';
                         const image = new AMap.GroundImage(url, circle.getBounds(), {
                         });
                         image.setMap(map);
@@ -61,6 +62,7 @@ export default {
                                     console.log(this.getExtData());
                                     console.log(this);
                                 });
+                                addInfoWindow(map, marker);
                             }, 1000);
                         }, 100);
                     }
