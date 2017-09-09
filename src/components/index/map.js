@@ -1,27 +1,35 @@
-export const addInfoWindow = (map, marker) => {
+export const addInfoWindow = (map, marker, data) => {
     //实例化信息窗体
     const title = '方恒假日酒店<span style="font-size:11px;color:#F00;">价格:318</span>';
+    const imgSrc = '//t1.focus-img.cn/sh640x300sh';
     let content = [];
+
+    data.subway = data.subway ? data.subway + '分钟' : '--';
+    data.bus = data.bus ? data.bus + '分钟' : '--';
+    data.walking = data.walking ? data.walking + '分钟' : '--';
+    data.bicycling = data.bicycling ? data.bicycling + '分钟' : '--';
+
     content.push(
         '<div class="content-img-wrap">' +
-        '   <a href="./#/detail/1"><img class="content-img" src="http://tpc.googlesyndication.com/simgad/5843493769827749134"></a>' +
+        //'   <a href="./#/detail/1"><img class="content-img" src="http://tpc.googlesyndication.com/simgad/5843493769827749134"></a>' +
+        '   <a href="./#/detail/1"><img class="content-img" src="' + imgSrc + data.projPhotoPath + '"></a>' +
         '</div>'
     );
     content.push(
         '<div class="content-text">' +
         '   <div class="line-one">' +
         '       <span class="house-name">' +
-        '           华清嘉园' +
+        '           ' + data.projName  +
         '       </span>' +
         '       <span class="house-prize">' +
         '           ￥579元㎡' +
         '       </span>' +
         '   </div>' +
         '   <ul class="line-two">' +
-        '       <li class="time subway"><span class= "icon"></span>10分钟</li>' +
-        '       <li class="time bus"><span class= "icon"></span>10分钟</li>' +
-        '       <li class="time bike"><span class= "icon"></span>10分钟</li>' +
-        '       <li class="time walk"><span class= "icon"></span>10分钟</li>' +
+        '       <li class="time subway"><span class= "icon"></span>' + data.subway + '</li>' +
+        '       <li class="time bus"><span class= "icon"></span>' + data.bus + '</li>' +
+        '       <li class="time bike"><span class= "icon"></span>' + data.bicycling + '</li>' +
+        '       <li class="time walk"><span class= "icon"></span>' + data.walking + '</li>' +
         '   </ul>' +
         '</div>'
     );
@@ -56,6 +64,10 @@ export const addInfoWindow = (map, marker) => {
         top.appendChild(closeX);
         // info.appendChild(top);
 
+        var mask = document.createElement("div");
+        mask.className = "info-mask";
+        info.appendChild(mask);
+
         // 定义中部内容
         var middle = document.createElement("div");
         middle.className = "info-middle";
@@ -82,20 +94,20 @@ export const addInfoWindow = (map, marker) => {
     }
 };
 
-export const addMarker = (map, location) => {
+export const addMarker = (map, data) => {
     const marker = new AMap.Marker({ //添加自定义点标记
         map: map,
-        position: [location.lon, location.lat], //基点位置
+        position: [data.lon, data.lat], //基点位置
         animation: 'AMAP_ANIMATION_DROP',
         offset: new AMap.Pixel(-17, -42), //相对于基点的偏移位置
         extData: '1',
-        content: '<div class="assign-pointer"><p class="assign-pointer-text">华清嘉园</p><p class="assign-pointer-text">5套</p></div>'
+        content: '<div class="assign-pointer"><p class="assign-pointer-text">' + data.projName + '</p><p class="assign-pointer-text">5套</p></div>'
     });
 
-    AMap.event.addListener(marker, 'touchstart', function () {
-        console.log(this.getExtData());
-        console.log(this);
-    });
+    //AMap.event.addListener(marker, 'touchstart', function () {
+    //    console.log(this.getExtData());
+    //    console.log(this);
+    //});
 
     return marker;
 };

@@ -8,6 +8,10 @@ var routers = [
                 component: require('COMPONENTS/index/index.vue'),
             },
             {
+                path: 'estate',
+                component: require('COMPONENTS/estate/list.vue'),
+            },
+            {
                 path: 'detail/:detailId',
                 component: require('COMPONENTS/detail/detail.vue'),
             }

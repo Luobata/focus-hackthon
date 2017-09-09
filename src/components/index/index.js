@@ -1,5 +1,6 @@
 import data from 'ASSETS/demo.json';
 import { addInfoWindow, addMarker } from './map';
+import getData from './data';
 let map;
 let marker;
 let geocoder;
@@ -44,17 +45,22 @@ export default {
                         setTimeout(() => {
                             let dom = document.querySelectorAll('.amap-container img');
                             let arr = data.data.content;
+                            let circle;
                             dom.forEach((item) => {
                                 if (item.src.indexOf(url) !== -1) {
                                     item.className += 'rotate';
+                                    circle = item;
                                 }
                             });
-                            setTimeout(() => {
-                                let marker = addMarker(map, arr[9]);
-                                addInfoWindow(map, marker);
-                                marker = addMarker(map, arr[0]);
-                                addInfoWindow(map, marker);
-                            }, 1000);
+                            getData(location, 30, (data) => {
+                                let marker;
+                                data.forEach((item) => {
+                                    marker = addMarker(map, item);
+                                    addInfoWindow(map, marker, item);
+                                });
+                                circle.className = '';
+                                circle.remove();
+                            });
                         }, 100);
                     }
                 });
