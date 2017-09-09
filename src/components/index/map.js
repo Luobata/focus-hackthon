@@ -2,6 +2,7 @@ export const addInfoWindow = (map, marker, data) => {
     //实例化信息窗体
     const title = '方恒假日酒店<span style="font-size:11px;color:#F00;">价格:318</span>';
     const imgSrc = '//t1.focus-img.cn/sh640x300sh';
+    let num = data.pid % 3;
     let content = [];
     let back = '';
 
@@ -13,7 +14,7 @@ export const addInfoWindow = (map, marker, data) => {
     content.push(
         '<div class="content-wrap">' +
         '<div class="content-img-wrap">' +
-        '   <a href="./#/detail/1"><img class="content-img" src="' + imgSrc + data.projPhotoPath + '"></a>' +
+        '   <a href="./#/detail/' + num + '"><img class="content-img" src="' + imgSrc + data.projPhotoPath + '"></a>' +
         '</div>' +
         '<div class="content-text">' +
         '   <div class="line-one">' +
@@ -144,7 +145,7 @@ export const addInfoWindow = (map, marker, data) => {
 };
 
 export const addMarker = (map, data) => {
-    let num = data.pid % 10;
+    let num = data.pid % 3;
     if (num === 0) num++;
     const marker = new AMap.Marker({ //添加自定义点标记
         map: map,

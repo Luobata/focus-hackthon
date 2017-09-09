@@ -3,7 +3,9 @@ import { addInfoWindow, addMarker } from './map';
 import getData from './data';
 let map;
 let marker;
+let image;
 let geocoder;
+let markers = [];
 
 export default {
     data () {
@@ -17,11 +19,16 @@ export default {
     },
     methods: {
         search (e) {
-            if (e.keyCode === 13) {
+            if (e.keyCode === 13 || !e) {
+                this.clearMap();
                 geocoder.getLocation(this.keyword, (status, result) => {
                     if (status === 'complete' && result.info === 'OK') {
                         const location = result.geocodes[0].location;
                         map.setZoomAndCenter(13, [location.lng, location.lat]);
+                        marker = new AMap.Marker({
+                            map: map,
+                            bubble: true
+                        });
                         marker.setPosition(
                             new AMap.LngLat(
                                 location.lng,
@@ -39,7 +46,7 @@ export default {
                         });
                         circle.setMap(map);
                         const url = '//localhost:6600/assets/circle.png';
-                        const image = new AMap.GroundImage(url, circle.getBounds(), {
+                        image = new AMap.GroundImage(url, circle.getBounds(), {
                         });
                         image.setMap(map);
                         setTimeout(() => {
@@ -56,6 +63,7 @@ export default {
                                 let marker;
                                 data.forEach((item) => {
                                     marker = addMarker(map, item);
+                                    markers.push(marker);
                                     addInfoWindow(map, marker, item);
                                 });
                                 circle.className = '';
@@ -65,6 +73,15 @@ export default {
                     }
                 });
             }
+        },
+        clearMap () {
+            map.clearMap();
+            return;
+            map.remove(markers);
+            if (image) {
+                map.remove([image]);
+            }
+            markers = [];
         }
     },
     mounted: function () {
@@ -90,13 +107,21 @@ export default {
                 });
             });
         });
-        AMap.plugin('AMap.Autocomplete', function () {//回调函数
+        AMap.plugin(['AMap.Autocomplete', 'AMap.PlaceSearch'], function () {//回调函数
             //实例化Autocomplete
             var autoOptions = {
                 city: "010", //城市，默认全国
-                input:"suggest"//使用联想输入的input的id
+                input: "suggest"//使用联想输入的input的id
             };
-            autocomplete= new AMap.Autocomplete(autoOptions);
+            var placeSearch = new AMap.PlaceSearch({
+                city: '北京',
+                map: map
+            });
+            autocomplete = new AMap.Autocomplete(autoOptions);
+            AMap.event.addListener(autocomplete, "select", function (e) {
+                that.search();
+                placeSearch.search(e.poi.name);
+            }); 
         });
     }
 };
