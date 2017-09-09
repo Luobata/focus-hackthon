@@ -79,10 +79,17 @@
         font-size: 14px;
         color: #4A4A4A;
     }
-    .index-wrap .info-middle {
+    .index-wrap .info-middle,
+    .index-wrap .info-back {
         width: 269.5px;
+        height: 200px;
         background: #fff;
         font-size: 0;
+        backface-visibility: hidden;
+    }
+    .index-wrap .info-middle {
+        z-index: 2;
+        position: relative;
     }
     .index-wrap .content-img {
         width: 100%;
@@ -157,6 +164,8 @@
     }
     .index-wrap .info {
         position: relative;
+        transition: 0.6s;
+	    transform-style: preserve-3d;
     }
     .index-wrap .info:after {
         content: "";
@@ -174,6 +183,16 @@
         top: 10px;
     }
 
+    .content-wrap {
+        position: relative;
+    }
+    .index-wrap .info-back {
+        backface-visibility: hidden;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: rotateY(-180deg);
+    }
 </style>
 <script src="./index.js">
 </script>

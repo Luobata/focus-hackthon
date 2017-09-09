@@ -3,6 +3,7 @@ export const addInfoWindow = (map, marker, data) => {
     const title = '方恒假日酒店<span style="font-size:11px;color:#F00;">价格:318</span>';
     const imgSrc = '//t1.focus-img.cn/sh640x300sh';
     let content = [];
+    let back = '';
 
     data.subway = data.subway ? data.subway + '分钟' : '--';
     data.bus = data.bus ? data.bus + '分钟' : '--';
@@ -10,12 +11,10 @@ export const addInfoWindow = (map, marker, data) => {
     data.bicycling = data.bicycling ? data.bicycling + '分钟' : '--';
 
     content.push(
+        '<div class="content-wrap">' +
         '<div class="content-img-wrap">' +
-        //'   <a href="./#/detail/1"><img class="content-img" src="http://tpc.googlesyndication.com/simgad/5843493769827749134"></a>' +
         '   <a href="./#/detail/1"><img class="content-img" src="' + imgSrc + data.projPhotoPath + '"></a>' +
-        '</div>'
-    );
-    content.push(
+        '</div>' +
         '<div class="content-text">' +
         '   <div class="line-one">' +
         '       <span class="house-name">' +
@@ -31,11 +30,16 @@ export const addInfoWindow = (map, marker, data) => {
         '       <li class="time bike"><span class= "icon"></span>' + data.bicycling + '</li>' +
         '       <li class="time walk"><span class= "icon"></span>' + data.walking + '</li>' +
         '   </ul>' +
+        '</div>' +
         '</div>'
     );
+
+    back = 
+        '<div class="wrap-back">' +
+        '</div>';
     var infoWindow = new AMap.InfoWindow({
         isCustom: true,  //使用自定义窗体
-        content: createInfoWindow(title, content.join('')),
+        content: createInfoWindow(title, content.join(''), back),
         offset: new AMap.Pixel(16, -45)
     });
 
@@ -44,7 +48,7 @@ export const addInfoWindow = (map, marker, data) => {
     });
 
     //构建自定义信息窗体
-    function createInfoWindow(title, content) {
+    function createInfoWindow(title, content, backs) {
         var info = document.createElement("div");
         info.className = "info";
 
@@ -77,15 +81,10 @@ export const addInfoWindow = (map, marker, data) => {
         info.appendChild(middle);
 
         // 定义底部内容
-        var bottom = document.createElement("div");
-        bottom.className = "info-bottom";
-        bottom.style.position = 'relative';
-        bottom.style.top = '0px';
-        bottom.style.margin = '0 auto';
-        var sharp = document.createElement("img");
-        sharp.src = "http://webapi.amap.com/images/sharp.png";
-        bottom.appendChild(sharp);
-        //info.appendChild(bottom);
+        var back = document.createElement("div");
+        back.className = "info-back";
+        back.innerHTML = backs;
+        info.appendChild(back);
         return info;
     }
     //关闭信息窗体
@@ -95,13 +94,15 @@ export const addInfoWindow = (map, marker, data) => {
 };
 
 export const addMarker = (map, data) => {
+    let num = data.pid % 10;
+    if (num === 0) num++;
     const marker = new AMap.Marker({ //添加自定义点标记
         map: map,
         position: [data.lon, data.lat], //基点位置
         animation: 'AMAP_ANIMATION_DROP',
         offset: new AMap.Pixel(-17, -42), //相对于基点的偏移位置
         extData: '1',
-        content: '<div class="assign-pointer"><p class="assign-pointer-text">' + data.projName + '</p><p class="assign-pointer-text">5套</p></div>'
+        content: '<div class="assign-pointer"><p class="assign-pointer-text">' + data.projName + '</p><p class="assign-pointer-text">' + num + '套</p></div>'
     });
 
     //AMap.event.addListener(marker, 'touchstart', function () {
