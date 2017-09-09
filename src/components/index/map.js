@@ -76,28 +76,31 @@ export const addInfoWindow = (map, marker, data) => {
                 if (data.subway === '--') return;
                 $(back).addClass('subway');
                 txt.html(data.subwaySteps.join('</br>'));
+                $(info).addClass('rotate-card');
             }
 
             if (src.hasClass('bus')) {
                 if (data.bus === '--') return;
                 $(back).addClass('bus');
                 txt.html(data.busSteps.join('</br>'));
+                $(info).addClass('rotate-card');
             }
 
             if (src.hasClass('bike')) {
                 if (data.bicycling === '--') return;
                 $(back).addClass('bike');
                 txt.html(data.bicyclingSteps.join('</br>'));
+                $(info).addClass('rotate-card');
             }
 
             if (src.hasClass('walk')) {
                 if (data.walking === '--') return;
                 $(back).addClass('walk');
                 txt.html(data.walkingSteps.join('</br>'));
+                $(info).addClass('rotate-card');
             }
 
 
-            $(info).addClass('rotate-card');
         };
         //可以通过下面的方式修改自定义窗体的宽高
         //info.style.width = "400px";
