@@ -2,6 +2,7 @@
  * 全景看房js
  * Created by 890 on 2016-10-12.
  */
+import { IsPC, webglAvailable, isIos, gt_ios, browser } from 'LIB/util';
 var o = new Orienter();
 o.orient = orienter;
 var camera, scene, renderer;
@@ -21,13 +22,13 @@ var texture_placeholder, isUserInteracting = false,
     onPointerDownLat;
 var mesh_arr = {},
     offsetPostion;
-var index = 0,
-    currentLoadIndex = 0;
+var index = 2,
+    currentLoadIndex = 2;
 var currentShowMesh = -1,
     isRotate = false;
 var rotateAngel = IsPC() ? 180 : 90;
 var villaId = "demo";
-var name_arr =["view1","view2"];//分类地址
+var name_arr =["view1", "view2", "view3"];//分类地址
 var load_url = 'assets/house/panorama';//相对根路径
 
 $(".bts").on("click", "img",
@@ -49,6 +50,10 @@ $(".rotate").click(function() {
         o.destroy()
     }
 });
+export const changeId = (id) => {
+    index = id;
+    changeVilla();
+};
 export const init = () => {
     var d = "";
     for (var c = 0; c < name_arr.length; c++) {
@@ -90,7 +95,8 @@ export const init = () => {
     a.addEventListener("touchstart", onDocumentTouchStart, false);
     a.addEventListener("touchmove", onDocumentTouchMove, false);
     window.addEventListener("resize", onWindowResize, false);
-    changeVilla()
+
+    changeVilla();
 }
 
 function changeVilla() {
@@ -245,88 +251,3 @@ function getDistance(d, c) {
     var b = c.y - d.y;
     return Math.pow((a * a + b * b), 0.5)
 }
-function IsPC() {
-    var a = navigator.userAgent;
-    var d = new Array("Android", "iPhone", "SymbianOS", "Windows Phone", "iPad", "iPod");
-    var b = true;
-    for (var c = 0; c < d.length; c++) {
-        if (a.indexOf(d[c]) > 0) {
-            b = false;
-            break
-        }
-    }
-    return b
-}
-function browser() {
-    var b = window.navigator.userAgent.toLowerCase();
-    if (b.indexOf("msie") >= 0) {
-        var a = b.match(/msie ([\d.]+)/)[1];
-        return {
-            type: "IE",
-            version: a
-        }
-    } else {
-        if (b.indexOf("firefox") >= 0) {
-            var a = b.match(/firefox\/([\d.]+)/)[1];
-            return {
-                type: "Firefox",
-                version: a
-            }
-        } else {
-            if (b.indexOf("chrome") >= 0) {
-                var a = b.match(/chrome\/([\d.]+)/)[1];
-                return {
-                    type: "Chrome",
-                    version: a
-                }
-            } else {
-                if (b.indexOf("opera") >= 0) {
-                    var a = b.match(/opera.([\d.]+)/)[1];
-                    return {
-                        type: "Opera",
-                        version: a
-                    }
-                } else {
-                    if (b.indexOf("Safari") >= 0) {
-                        var a = b.match(/version\/([\d.]+)/)[1];
-                        return {
-                            type: "Safari",
-                            version: a
-                        }
-                    }
-                }
-            }
-        }
-    }
-    return {
-        type: "",
-        version: ""
-    }
-}
-function gt_ios() {
-    console.log(navigator.userAgent);
-    if ((navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPod/i))) {
-        return Boolean(navigator.userAgent.match(/OS [4-9]_\d[_\d]* like Mac OS X/i))
-    } else {
-        return false
-    }
-}
-function webglAvailable() {
-    try {
-        var a = document.createElement("canvas");
-        return !! (window.WebGLRenderingContext && (a.getContext("webgl") || a.getContext("experimental-webgl")))
-    } catch(b) {
-        return false
-    }
-}
-function isIos() {
-    var a = navigator.userAgent.toLowerCase();
-    if (/iphone|ipad|ipod/.test(a)) {
-        return true
-    } else {
-        if (/android/.test(a)) {
-            return false
-        }
-    }
-    return false
-};
