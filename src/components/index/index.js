@@ -59,15 +59,22 @@ export default {
                                     circle = item;
                                 }
                             });
+                            let spend = 5000;
+                            let start = new Date().getTime();
                             getData(location, 30, (data) => {
+                                let end = new Date().getTime();
+                                let time = (end - start) <= spend ? (spend - end + start) : 0;
                                 let marker;
-                                data.forEach((item) => {
-                                    marker = addMarker(map, item);
-                                    markers.push(marker);
-                                    addInfoWindow(map, marker, item);
-                                });
-                                circle.className = '';
-                                circle.remove();
+                                console.log(time);
+                                setTimeout(() => {
+                                    data.forEach((item) => {
+                                        marker = addMarker(map, item);
+                                        markers.push(marker);
+                                        addInfoWindow(map, marker, item);
+                                    });
+                                    circle.className = '';
+                                    circle.remove();
+                                }, time);
                             });
                         }, 100);
                     }
